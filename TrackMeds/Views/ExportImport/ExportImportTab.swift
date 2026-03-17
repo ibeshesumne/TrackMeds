@@ -70,6 +70,9 @@ struct ExportImportTab: View {
                             .foregroundStyle(.green)
                     }
                 }
+                Section("Support") {
+                    Link("Report an Issue or Get Help", destination: URL(string: "https://github.com/ibeshesumne/TrackMeds/issues")!)
+                }
                 Section("Data") {
                     Button("Delete All Records & Medications", role: .destructive) {
                         showDeleteAllConfirmation = true
